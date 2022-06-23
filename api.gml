@@ -457,6 +457,7 @@ draw_sprite_general(sprite:id,subimg:number,left,top,w:number,h:number,x:number,
 trace(...values)
 :sprite_get(v:string)
 :sound_get(v:string)
+:font_get(v:string)
 sprite_change_offset(spr:string, xoff:int, yoff:int, ?big_hurtbox)
 asset_get(asset:string)
 resource_get(v:string)
