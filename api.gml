@@ -1,5 +1,5 @@
-:script_execute(script:index, ...args):
-script_get_name(script:index):
+:script_execute(script:int, ...args):
+script_get_name(script:int):
 script_get_index(script_name:string):
 is_real(v):#
 is_int32(v):#
@@ -503,6 +503,7 @@ set_character_color_shading(shade_slot:int, shading_value)
 get_color_profile_slot_r(color_slot:int, shade_slot:int)
 get_color_profile_slot_g(color_slot:int, shade_slot:int)
 get_color_profile_slot_b(color_slot:int, shade_slot:int)
+get_color_profile_slot_range(shade_slot:int, hsv:int)
 set_num_palettes(num:int)
 
 :get_hitbox_angle(hitbox_id:int)
@@ -611,6 +612,7 @@ AG_OFF_LEDGE = 8
 AG_LANDING_LAG = 12
 AG_STRONG_CHARGE_WINDOW = 10
 AG_USES_CUSTOM_GRAVITY = 24
+AG_NO_PARRY_STUN = 20
 
 AG_WINDOW_TYPE = 1
 AG_WINDOW_LENGTH = 2
