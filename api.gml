@@ -45,6 +45,7 @@ max(...):#
 clamp(v:number, min:number, max:number):#
 lerp(v1:number, v2:number, amt:number):#
 dot_product(x1:number, y1:number, x2:number, y2:number):#
+dot_product_3d(x1:number, y1:number, z1:number, x2:number, y2:number, z2:number):#
 angle_difference(src:number, dst:number):#
 point_distance(x1:number, y1:number, x2:number, y2:number):#
 point_direction(x1:number, y1:number, x2:number, y2:number):#
@@ -181,6 +182,8 @@ instance_number(obj:id):int
 instance_exists(:id):bool
 :instance_position(x:number,y:number,obj:id):inst
 :instance_place(x:number,y:number,obj:id):inst
+:instance_place_list(x:number,y:number,obj:id, list, ordered:bool):inst
+:instance_position_list(x:number,y:number,obj:id, list, ordered:bool):inst
 instance_nearest(x:number,y:number,obj:id):inst
 instance_furthest(x:number,y:number,obj:id):inst
 :motion_set(dir:number, speed:number)
@@ -572,6 +575,7 @@ view_get_yview()
 :set_num_hitboxes(attack:int, value)
 :get_num_hitboxes(attack:int)
 :reset_num_hitboxes(attack:int)
+get_local_player()
 tween(ease, start:int, end:int, current_time:int, total_time:int, ...values)
 ease_linear(start:int, end:int, current_time:int, total_time:int)
 ease_backIn(start:int, end:int, current_time:int, total_time:int, overshoot:int)
@@ -898,6 +902,10 @@ SET_HUD_NAMES = 2
 SET_SFX_VOLUME = 3
 SET_MUSIC_VOLUME = 4
 SET_MENU_VOLUME = 5
+SET_FX_QUALITY = 6
+SET_HUD_SHAKE = 7
+SET_RETRO_FX = 8
+SET_LANGUAGE = 9
 
 
 get_marker_x( num:real )
@@ -992,6 +1000,7 @@ HFX_FOR_HIT_SMALL = 14
 //zetter
 HFX_ZET_FIRE = 3
 HFX_ZET_FIRE_DIR = 4
+HFX_ZET_FIRE_BIG = 148
 HFX_ZET_SHINE_BG = 200
 HFX_ZET_SHINE_FG = 201
 HFX_ZET_SHINE_BIG_BG = 202
