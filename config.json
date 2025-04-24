@@ -11,6 +11,6 @@
 	"projectRegex": "^config\\.ini$",
 	
 	"helpURL": "https://www.rivalsofaether.com/workshop/",
-	"apiFiles": ["api.gml", "default.gml"],
+	"apiFiles": ["api.gml", "const.gml", "default.gml"],
 	"assetFiles": []
 }

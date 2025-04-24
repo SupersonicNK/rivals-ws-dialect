@@ -56,3 +56,17 @@ id*
 solid
 persistent
 mask_index
+
+//special stuff that you should touch at your own risk
+current_time
+current_second
+current_minute
+current_hour
+current_day
+current_weekday
+current_year
+
+mouse_x
+mouse_y
+mouse_button
+//cursor_sprite
